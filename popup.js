@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         chrome.storage.sync.remove(urlTextarea.value, function() {
           // Notify that we saved.
           console.log('REMOVED script for ' + urlTextarea.value);
-		  //chrome.extension.getBackgroundPage().console.log('foo'); Logging no longer works in Failfox.
         });
         window.close();
         return;
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.close();
     });
 	
-	//Function above was copied to make import function here.
+	//Function above was copied to make import function here INCOMPLETE!!! Need to swap out for() loop for the compatible version.
 	importButton.addEventListener('click', function() {
 	var inputElement = document.createElement('input');
 	inputElement.type = 'file';
@@ -66,12 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				console.log("Saved the keypair: " + JSON.stringify(keypair));
 				
 			});
-			//maybe works? Does actually return SOMETHING
-			chrome.storage.sync.get(null, function(items) {
-			var allKeys = Object.keys(items);
-			console.log(allKeys);
-			});
-			
 		};
 		reader.readAsText(file);
 	};
@@ -91,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		var a = document.createElement('a');
 		a.href = URL.createObjectURL(blob);
-		a.download = "allData.json";
+		a.download = "injector_config.json";
 		document.body.appendChild(a);    
 		a.click();    
 		document.body.removeChild(a);
