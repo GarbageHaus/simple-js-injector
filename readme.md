@@ -9,6 +9,5 @@ This, _originally_ is an adaptation to Firefox version of the Chrome extension "
 You can check out the original GitHub page for Chrome [here](https://github.com/hex0cter)
 The link to the Firefox addon can be found [here](https://addons.mozilla.org/firefox/addon/simple-javascript-injector/)
 
-#Addon Repo
+### Addon Repo
 This space will be used to provide a link to this repo's addon when the changes have been completed. (https://addons.mozilla.org/)
-
