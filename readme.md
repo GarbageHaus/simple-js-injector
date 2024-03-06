@@ -1,3 +1,5 @@
+### NON-FUNCTIONAL FOR NOW, When this is completed, see the updated description and releases.
+
 ## Simple JS Injector
 
 This addon creates a small popup that lets you paste some JS code and inject it into the page you are currently seeing. It also allows for Importing and Exporting JSON files so that customizations can be shared within your organization or group without requiring it to be public.
