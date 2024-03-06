@@ -1,0 +1,37 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@jsinjector.com"
+    }
+  },  
+  "manifest_version": 2,
+  "name": "Simple JavaScript Injector",
+  "author": "Dr. John Arby",
+  "short_name": "Simple JS injector",
+  "description": "An expanded version of the Firefox JS injector from Joel Perpetua and Daniel Han",
+  "version": "1.2",
+  "browser_action": {
+  "default_icon":
+    {
+      "16": "images/icon16.png",
+      "24": "images/icon24.png",
+      "32": "images/icon32.png",
+      "128": "images/icon128.png"
+    },
+   "default_title": "Simple Javascript Injector",
+   "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+     "data.js",
+     "background.js"
+     ]
+  },
+  "permissions": [
+   "activeTab",
+   "storage",
+   "tabs",
+   "http://*/",
+   "https://*/"
+   ]
+}
